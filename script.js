@@ -39,14 +39,13 @@ cards.forEach((value) => {
   createCard(value.image, value.color,)
 });
 
+let displayCard = function (){
+  this.classList.toggle("open");
+  this.classList.toggle("show");
+  this.classList.toggle("disabled");
+}
 
 const things = document.querySelectorAll('.card')
 for (let i = 0; i < things.length; i++) {
   things[i].addEventListener('click', displayCard);
-}
-
-var displayCard = function (){
-   this.classList.toggle("open");
-   this.classList.toggle("show");
-   this.classList.toggle("disabled");
 }

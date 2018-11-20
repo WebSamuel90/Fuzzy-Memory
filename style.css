@@ -31,4 +31,18 @@ body {
 .card img {
   height: 150px;
   width: 150px;
+  margin: 14px;
+}
+
+.card .open {
+  background-color: black;
+
+}
+
+.show {
+
+}
+
+.card .disabled {
+
 }
