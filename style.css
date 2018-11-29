@@ -4,6 +4,9 @@ body {
   padding: 0px;
   height: 100vh;
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -16,33 +19,85 @@ body {
   height: 760px;
   width: 760px;
   display: flex;
+  opacity:1;
+  transition:1s;
   flex-wrap: wrap;
 }
 
+.greeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+}
 
-.card{
+.startBtn {
+  height: 50px;
+  font-size: 20px;
+}
+
+.greeting img {
+  height: 100px;
+  width: 100px;
+}
+
+.hidden {
+  opacity:0;
+}
+
+.finished-box {
+  width: 100vw;
+  height: 100vh;
+  background-color: yellow;
+  z-index: 10;
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.finished {
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 500px;
+  background-color: aqua;
+}
+
+.card {
   height: 180px;
   width: 180px;
   cursor: pointer;
   background-color: aqua;
   margin: 5px;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  transform: rotateX(0deg);
+
+}
+
+.card.toggle-on {
+  transform: rotateX(-180deg);
+}
+
+.card .front {
+  background-color: aqua;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+
+.card .back {
+  background-color: aquamarine;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
 }
 
 .card img {
   height: 150px;
   width: 150px;
   margin: 14px;
-}
-
-.card .open {
-  background-color: black;
-
-}
-
-.show {
-
-}
-
-.card .disabled {
-
 }
