@@ -36,6 +36,7 @@ startBtn.addEventListener('click', () => {
 })
 
 restartBtn.addEventListener('click', () => {
+  container.classList.remove('hidden')
   finished.style.display = "none";
   restartGame()
 })
@@ -113,7 +114,7 @@ function startGame() {
               }, 1300)
             }
           }
-        }else{
+        } else {
           console.log('This card is already active')
         }
       }

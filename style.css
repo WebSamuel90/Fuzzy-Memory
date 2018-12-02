@@ -23,7 +23,6 @@ body {
   opacity:1;
   transition:1s;
   flex-wrap: wrap;
-  transition: 2s;
 }
 
 .greeting {
@@ -37,6 +36,7 @@ body {
   background-color: aqua;
   padding: 20px;
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  transition: height 2s, width 2s, padding 2s, visibility 2s, opacity 0.5s ease-in-out;
 }
 
 h1 {
@@ -68,7 +68,7 @@ h1 {
   background-color: aquamarine;
   -webkit-text-stroke-width: .1px;
   -webkit-text-stroke-color: #262626;
-  border: 1px solid aquamarine;
+  border: 1px solid #262626;
 }
 
 .greeting img {
@@ -85,7 +85,6 @@ h1 {
   height: 100vh;
   background-color: beige;
   z-index: 10;
-  /* display: flex; */
   display: none;
   align-items: center;
   justify-content: center;
@@ -94,15 +93,19 @@ h1 {
 
 .finished {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  height: 300px;
-  width: 500px;
   height: 600px;
   width: 800px;
   background-color: aqua;
   padding: 20px;
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+.finished img {
+  height: 250px;
+  width: 250px;
 }
 
 .restartBtn {
@@ -122,7 +125,7 @@ h1 {
   background-color: aquamarine;
   -webkit-text-stroke-width: .1px;
   -webkit-text-stroke-color: #262626;
-  border: 1px solid aquamarine;
+  border: 1px solid #262626;
 }
 
 .card {
@@ -134,7 +137,6 @@ h1 {
   transform-style: preserve-3d;
   transition: 0.5s;
   transform: rotateX(0deg);
-
 }
 
 .card.toggle-on {
