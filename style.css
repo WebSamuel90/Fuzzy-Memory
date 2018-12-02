@@ -23,6 +23,7 @@ body {
   opacity:1;
   transition:1s;
   flex-wrap: wrap;
+  transition: 2s;
 }
 
 .greeting {
@@ -82,7 +83,7 @@ h1 {
 .finished-box {
   width: 100vw;
   height: 100vh;
-  background-color: yellow;
+  background-color: beige;
   z-index: 10;
   /* display: flex; */
   display: none;
@@ -92,11 +93,36 @@ h1 {
 }
 
 .finished {
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 300px;
   width: 500px;
+  height: 600px;
+  width: 800px;
   background-color: aqua;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+.restartBtn {
+  background-color: beige;
+  height: 50px;
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 5px 10px;
+  border: .1px solid #262626;
+  color: #262626;
+  letter-spacing: 2px;
+  transition: .5s;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+.restartBtn:hover {
+  background-color: aquamarine;
+  -webkit-text-stroke-width: .1px;
+  -webkit-text-stroke-color: #262626;
+  border: 1px solid aquamarine;
 }
 
 .card {
