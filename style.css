@@ -35,7 +35,7 @@ body {
 .card {
   height: 180px;
   width: 180px;
-  cursor: pointer;
+  cursor: url("assets/point-up.png"), auto;
   background-color: aqua;
   margin: 5px;
   transform-style: preserve-3d;
