@@ -104,7 +104,7 @@ function startGame() {
 
               if (solvedCards.length === 16) {
                 finished.style.display = "flex";
-                score.innerHTML = "You did in "+ clicks +" clicks!"
+                score.textContent = "You did in "+ clicks +" clicks!"
                 audio.pause()
                 audio.currentTime = 0.0
               }

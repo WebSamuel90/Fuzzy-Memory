@@ -8,6 +8,9 @@ body {
   justify-content: center;
   align-items: center;
   background-color: beige;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
 }
 
 .container {
