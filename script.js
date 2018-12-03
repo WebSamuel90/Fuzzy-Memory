@@ -32,23 +32,26 @@ let solvedCards = []
 let toggledCards = []
 let animating = false;
 
+//BUTTON TO START GAME
 startBtn.addEventListener('click', () => {
   startGame()
   container.classList.remove('hidden')
   firstScreen.style.display = "none"
 })
 
+//BUTTON TO RESTART THE GAME
 restartBtn.addEventListener('click', () => {
   container.classList.remove('hidden')
-  finished.style.display = "none";
+  finished.style.display = "none"
   restartGame()
 })
 
-  // Shuffle the array:
+//Shuffle the array:
 function compareRandom(a, b) {
   return Math.random() - 0.5
 }
 
+//RESTART THE GAME
 function restartGame() {
   solvedCards = []
   container.innerHTML = ''
@@ -56,6 +59,7 @@ function restartGame() {
   startGame()
 }
 
+//START THE GAME
 function startGame() {
 
   audio.loop = true
@@ -63,8 +67,7 @@ function startGame() {
 
   cards.sort(compareRandom);
 
-  // Print the cards array
-
+  // PRINT THE CARDS ARRAY
   const container = document.querySelector('.container')
 
   function createCard(id, image){
@@ -80,36 +83,41 @@ function startGame() {
   for (let i = 0; i < cards.length; i++) {
     createCard(cards[i].id, cards[i].image)
   }
-  // End Print the cards array
 
-  // Turn one card
+  // TURN ONE CARD
   const cardElements = document.querySelectorAll('.container .card')
   for (let i = 0; i < cardElements.length; i++) {
     cardElements[i].addEventListener('click', () => {
 
+      //COUNTS CLICKS
       clicks += 1
-      console.log(clicks)
 
+      //CHECKS IF CARD IS FLIPPED
       if (!animating) {
         if(!cardElements[i].classList.contains('toggle-on')){
 
+          //FLIPS CARD
           cardElements[i].classList.add('toggle-on')
           toggledCards.push(cardElements[i])
 
-
+          //CHECK IF MATCH
           if(toggledCards.length >= 2){
             if (toggledCards[0].getAttribute('data-id') === toggledCards[1].getAttribute('data-id')) {
               console.log('match');
               solvedCards = solvedCards.concat(toggledCards)
 
+              //CHECK IF FINISHED
               if (solvedCards.length === 16) {
                 finished.style.display = "flex";
-                score.textContent = "You did in "+ clicks +" clicks!"
+                score.textContent = "You did it in "+ clicks +" clicks!"
                 audio.pause()
                 audio.currentTime = 0.0
               }
 
+              //FLIP BACK UNMATCHED CARDS
               toggledCards = []
+
+              //PREVENT SPAM CLICKS
             } else {
               animating = true;
               setTimeout(() => {
@@ -121,8 +129,6 @@ function startGame() {
               }, 1300)
             }
           }
-        } else {
-          console.log('This card is already active')
         }
       }
     })
