@@ -10,7 +10,9 @@
 
 ## Built with
 
-- HTML, CSS and JavaScript
+- HTML 
+- CSS 
+- JavaScript
 
 
 ## Author
