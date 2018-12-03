@@ -21,7 +21,10 @@ const startBtn = document.querySelector('.startBtn')
 const greeting = document.querySelector('.greeting')
 const container = document.querySelector('.container')
 const finished = document.querySelector('.finished-box')
+const score = document.querySelector('#score')
 const restartBtn = document.querySelector('.restartBtn')
+
+let clicks = 0
 
 let audio = new Audio('./assets/whistle-stop.mp3')
 
@@ -50,6 +53,7 @@ function compareRandom(a, b) {
 function restartGame() {
   solvedCards = []
   container.innerHTML = ''
+  clicks = 0
   startGame()
 }
 
@@ -84,6 +88,9 @@ function startGame() {
   for (let i = 0; i < cardElements.length; i++) {
     cardElements[i].addEventListener('click', () => {
 
+      clicks += 1
+      console.log(clicks)
+
       if (!animating) {
         if(!cardElements[i].classList.contains('toggle-on')){
 
@@ -98,6 +105,7 @@ function startGame() {
 
               if (solvedCards.length === 16) {
                 finished.style.display = "flex";
+                score.innerHTML = "You did in "+ clicks +" clicks!"
                 audio.pause()
                 audio.currentTime = 0.0
               }
