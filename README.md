@@ -4,7 +4,7 @@
 
 ### Installing
 
-1. Clone the repo: `git clone https://github.com/hannaell/Memory`
+1. Clone the repo: `git clone https://github.com/WebSamuel90/Fuzzy-Memory.git`
 2. Open index.html in chrome or firefox
 
 
