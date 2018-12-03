@@ -27,6 +27,7 @@ const restartBtn = document.querySelector('.restartBtn')
 let clicks = 0
 
 let audio = new Audio('./assets/whistle-stop.mp3')
+let success = new Audio('./assets/fanfare-sound.mp3')
 
 let solvedCards = []
 let toggledCards = []
@@ -111,6 +112,7 @@ function startGame() {
                 finished.style.display = "flex";
                 score.textContent = "You did it in "+ clicks +" clicks!"
                 audio.pause()
+                success.play()
                 audio.currentTime = 0.0
               }
 

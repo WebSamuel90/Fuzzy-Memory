@@ -49,6 +49,7 @@
   letter-spacing: 2px;
   transition: .5s;
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  cursor: url("assets/point-up.png"), auto;
 }
 
 .restartBtn:hover {
