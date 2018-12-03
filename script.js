@@ -18,7 +18,7 @@ const cards = [
 ]
 
 const startBtn = document.querySelector('.startBtn')
-const greeting = document.querySelector('.greeting')
+const firstScreen = document.querySelector('.first-screen')
 const container = document.querySelector('.container')
 const finished = document.querySelector('.finished-box')
 const score = document.querySelector('#score')
@@ -35,7 +35,7 @@ let animating = false;
 startBtn.addEventListener('click', () => {
   startGame()
   container.classList.remove('hidden')
-  greeting.style.display = "none"
+  firstScreen.style.display = "none"
 })
 
 restartBtn.addEventListener('click', () => {
@@ -48,7 +48,6 @@ restartBtn.addEventListener('click', () => {
 function compareRandom(a, b) {
   return Math.random() - 0.5
 }
-
 
 function restartGame() {
   solvedCards = []
