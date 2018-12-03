@@ -15,7 +15,7 @@
 
 ## Author
 
-- Samuel Johansson
+- [Samuel Johansson](https://github.com/WebSamuel90/)
 
 
 ## Testers
