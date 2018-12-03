@@ -28,6 +28,7 @@ let clicks = 0
 
 let audio = new Audio('./assets/whistle-stop.mp3')
 let success = new Audio('./assets/fanfare-sound.mp3')
+let hmm = new Audio('./assets/Hmm-sound-effect.mp3')
 
 let solvedCards = []
 let toggledCards = []
@@ -63,6 +64,7 @@ function restartGame() {
 //START THE GAME
 function startGame() {
 
+  hmm.play()
   audio.loop = true
   audio.play()
 
