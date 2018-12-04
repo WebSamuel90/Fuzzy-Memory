@@ -33,4 +33,4 @@
 
 ## License
 
--MIT
+- [MIT](LICENSE)
