@@ -10,7 +10,7 @@
 
 1. Clone the repo: `git clone https://github.com/WebSamuel90/Fuzzy-Memory.git`
 2. Open index.html in chrome or firefox
-3. Or visit fuzzy-memory.netlify.com
+3. Or visit [fuzzy-memory.netlify.com]
 
 
 ## Built with
