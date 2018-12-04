@@ -1,7 +1,7 @@
 # Fuzzy-Memory
 
-<img src="https://media.giphy.com/media/3o7buirYcmV5nSwIRW/giphy.gif" width: "100%">
-<iframe src="https://giphy.com/embed/3o7buirYcmV5nSwIRW" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/emoji-idk-thinking-3o7buirYcmV5nSwIRW">via GIPHY</a></p>
+<img src="https://media.giphy.com/media/3o7buirYcmV5nSwIRW/giphy.gif">
+
 
 ## A School project
 
