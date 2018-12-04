@@ -1,5 +1,7 @@
 # Fuzzy-Memory
 
+<img src="https://gph.is/2pjekpP" width: "100%">
+
 ## A School project
 
 
