@@ -1,6 +1,6 @@
 # Fuzzy-Memory
 
-<img src="https://gph.is/2pjekpP" width: "100%">
+<img src="https://media.giphy.com/media/3o7buirYcmV5nSwIRW/giphy.gif" width: "100%">
 
 ## A School project
 
